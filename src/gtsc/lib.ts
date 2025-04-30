@@ -1,5 +1,5 @@
-export function greet(name: number) {
-  console.log("Hello ", name);
+export function greet(name: string) {
+  return `Hello ${name}`;
 }
 
 export function append<T>(list: Array<T>, item: T) {

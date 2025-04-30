@@ -1,5 +1,7 @@
+import gleam/io
 import gtsc/lib_ffi
 
 pub fn main() -> Nil {
-  lib_ffi.greet(3)
+  let x = lib_ffi.greet(3)
+  io.println(x)
 }
