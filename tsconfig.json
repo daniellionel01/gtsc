@@ -12,18 +12,28 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
 
     // Best practices
     "strict": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
+    "declarationMap": true,
+
+    // Type checking
+    "checkJs": true,
+    "composite": true,
 
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false
   },
-  "include": ["./build/dev/javascript/**/*.mjs", "./build/dev/javascript/**/*.ts", "./build/dev/javascript/**/*.d.mts"]
+  "include": ["./src/**/*.ts", "./build/dev/javascript/**/*.mjs", "./build/dev/javascript/**/*.ts", "./build/dev/javascript/**/*.d.mts"],
+  "references": [
+    { "path": "./build/dev/javascript" }
+  ]
 }
