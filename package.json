@@ -1,15 +1,5 @@
 {
-  "name": "gtsc",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "start": "bun run build/dev/javascript/gtsc/gleam.main.mjs",
-    "typecheck": "tsc --noEmit"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+  "dependencies": {
+    "tsdown": "^0.10.2"
   }
 }
